@@ -3,7 +3,9 @@ const {MongoClient}  = require('mongodb');
 var ObjectID = require('mongodb').ObjectID;
 
 // MongoDB constants
-const DB_URL = "mongodb+srv://Priyanka:F21MPH00348145@clusterf21ao.0n6hd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+// Enter your username, password and cluster URL here
+// If you are testing my F21MP, please email me at pkb2@hw.ac.uk
+const DB_URL = "mongodb+srv://<USERNAME>:<PASSWORD>@<CLUSTER_URI>?retryWrites=true&w=majority";
 const client = new MongoClient(DB_URL, {useUnifiedTopology: true});
 const DB_NAME = "patients";
 
